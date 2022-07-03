@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
 import image from '../images/Steven.jpg'
+import image2 from '../images/photo_2022-04-11_10-09-27.jpg'
 
 export default function Header() {
     return (
@@ -76,10 +77,10 @@ export default function Header() {
               </Card.Body>
             </Card>
         </Tab>
-        <Tab eventKey="home2" title="Tabs3">
-            text 3
+        <Tab eventKey="home3" title="Tabs3">
+        <Card.Img variant="top" style={{}} src={image2} />
         </Tab>
-        <Tab eventKey="home3" title="Disable" disabled>
+        <Tab eventKey="homeDisable" title="Disable" disabled>
             text 4
         </Tab>
         </Tabs>
