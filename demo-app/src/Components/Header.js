@@ -13,12 +13,12 @@ export default function Header() {
     return (
       <div className="">
         <Container>
-        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
-        <Tab eventKey="home1" title="Tabs1">
+        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="justify-content-center nav-pills mb-3">
+        <Tab className='nav-item' eventKey="home1" title="Tabs1" active>
             Sugar pium tootise roll biscuit caramels. Liquorice brownie pastry cotton candy oat cake fruitcake jelly chiupa chups.
             Pudding caramels pastry powder cake souffie water caramels. Jelly-o pie cupcake.
         </Tab>
-        <Tab eventKey="home2" title="Tabs2">
+        <Tab className='nav-item' aria-current="page" eventKey="home2" title="Tabs2">
             <h4 style={{"textAlign" : "center"}}>Profile</h4>
             <Card style={{ width: '40rem'}} className="container mt-5">
               <Card.Img variant="top" style={{}} src={image} />
@@ -77,10 +77,10 @@ export default function Header() {
               </Card.Body>
             </Card>
         </Tab>
-        <Tab eventKey="home3" title="Tabs3">
+        <Tab className='nav-item' eventKey="home3" title="Tabs3">
         <Card.Img variant="top" style={{}} src={image2} />
         </Tab>
-        <Tab eventKey="homeDisable" title="Disable" disabled>
+        <Tab className='nav-item' eventKey="homeDisable" title="Disable" disabled>
             text 4
         </Tab>
         </Tabs>
