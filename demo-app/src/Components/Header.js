@@ -14,7 +14,7 @@ export default function Header() {
       <div className="">
         <Container>
         <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="justify-content-center nav-pills mb-3">
-        <Tab className='nav-item' eventKey="home1" title="Tabs1" active>
+        <Tab className="nav-item active" eventKey="home1" title="Tabs1" active>
             Sugar pium tootise roll biscuit caramels. Liquorice brownie pastry cotton candy oat cake fruitcake jelly chiupa chups.
             Pudding caramels pastry powder cake souffie water caramels. Jelly-o pie cupcake.
         </Tab>
