@@ -54,8 +54,12 @@ export default function Header() {
                   <Col>洪若源</Col>
                 </Row>
                 <Row>
-                  <Col>Chinede Traditional</Col>
+                  <Col>Chinese Traditional</Col>
                   <Col>洪若源</Col>
+                </Row>
+                <Row>
+                  <Col>Name Engilsh Japanese</Col>
+                  <Col>洪 スティーブン</Col>
                 </Row>
                 <Row>
                   <Col>Hiragana</Col>
