@@ -15,22 +15,14 @@ export default function Header() {
     return (
       <div className="">
         <Container>
-        <ul className="nav nav-tabs" id="myTab" role="tablist">
-        <li className="nav-item" role="presentation">
-          <button className="nav-link" id="tab-1" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="Tab 1" aria-selected="true">Tab 1</button>
-        </li>
-        <li className="nav-item" role="presentation">
-          <button className="nav-link active" id="tab-2" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="Tab 2" aria-selected="false">Tab 2</button>
-        </li>
-        <li className="nav-item" role="presentation">
-          <button className="nav-link" id="tab-3" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="Tab 3" aria-selected="false">Tab 3</button>
-        </li>
-        <li className="nav-item" role="presentation">
-          <button className="nav-link disabled" id="tab-disabled" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="Disabled" aria-selected="false">Disable</button>
-        </li>
-        </ul>
-        <div className="tab-content" id="myTabContent">
-          <div className="tab-pane fade" id="one" role="tabpanel" aria-labelledby="tab-1">
+        <div className="nav nav-tabs" id="nav-tab" role="tablist">
+          <button className="nav-link" id="nav-tab-1" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="Tab 1" aria-selected="true">Tab 1</button>
+          <button className="nav-link active" id="nav-tab-2" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="Tab 2" aria-selected="false">Tab 2</button>
+          <button className="nav-link" id="nav-tab-3" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="Tab 3" aria-selected="false">Tab 3</button>
+          <button className="nav-link disabled" id="nav-tab-disabled" data-bs-toggle="tab" data-bs-target="#tab-disabled" type="button" role="tab" aria-controls="Disabled" aria-selected="false">Disable</button>
+        </div>
+        <div className="tab-content" id="nav-tabContent">
+          <div className="tab-pane fade" id="nav-one" role="tabpanel" aria-labelledby="nav-tab-1">
           <h4 style={{"textAlign" : "center"}}>Profile</h4>
                 <div className="card container mt-5" style={{ width: '40rem'}} >
                   <Card.Img variant="top" style={{}} src={image} />
@@ -93,14 +85,14 @@ export default function Header() {
                   </div>
                 </div>
           </div>
-          <div className="tab-pane fade show active" id="two" role="tabpanel" aria-labelledby="tab-2">
+          <div className="tab-pane fade show active" id="nav-two" role="tabpanel" aria-labelledby="nav-tab-2">
               Sugar pium tootise roll biscuit caramels. Liquorice brownie pastry cotton candy oat cake fruitcake jelly chiupa chups.
               Pudding caramels pastry powder cake souffie water caramels. Jelly-o pie cupcake.
           </div>
-          <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="tab-3">
+          <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-tab-3">
               <Card.Img variant="top" style={{}} src={image2} />
           </div>
-          <div class="tab-pane fade" id="disabled" role="tabpanel" aria-labelledby="tab-disbled">
+          <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-tab-disbled">
               Sugar pium tootise roll biscuit caramels. Liquorice brownie pastry cotton candy oat cake fruitcake jelly chiupa chups.
               Pudding caramels pastry powder cake souffie water caramels. Jelly-o pie cupcake.
           </div>
