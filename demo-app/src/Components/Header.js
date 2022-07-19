@@ -1,12 +1,11 @@
-import Tab from 'react-bootstrap/Tab'
-import Tabs from 'react-bootstrap/Tabs'
+// import Tab from 'react-bootstrap/Tab'
+// import Tabs from 'react-bootstrap/Tabs'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav';
+// import Nav from 'react-bootstrap/Nav';
 
-
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+// import Col from 'react-bootstrap/Col'
+// import Row from 'react-bootstrap/Row'
 
 import image from '../images/Steven.jpg'
 import image2 from '../images/photo_2022-04-11_10-09-27.jpg'
