@@ -2,6 +2,8 @@ import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav';
+
 
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -13,81 +15,96 @@ export default function Header() {
     return (
       <div className="">
         <Container>
-        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="justify-content-center nav-pills mb-3">
-        <Tab className="nav-item active" eventKey="home1" title="Tabs1" active>
-            Sugar pium tootise roll biscuit caramels. Liquorice brownie pastry cotton candy oat cake fruitcake jelly chiupa chups.
-            Pudding caramels pastry powder cake souffie water caramels. Jelly-o pie cupcake.
-        </Tab>
-        <Tab className='nav-item' aria-current="page" eventKey="home2" title="Tabs2">
-            <h4 style={{"textAlign" : "center"}}>Profile</h4>
-            <Card style={{ width: '40rem'}} className="container mt-5">
-              <Card.Img variant="top" style={{}} src={image} />
-              <Card.Body>
-                <Card.Title style={{ textAlign: 'center'}}>Steven Hong</Card.Title>
-                <Card.Text>
-                <Row>
-                  <Col>Born</Col>
-                  <Col>Penjaringan, Jakarta, Indonesia, 16 September 2000 (21)years</Col>
-                </Row>
-                <Row>
-                  <Col>Residence</Col>
-                  <Col>Penjaringan, Jakarta, Indonesia</Col>
-                </Row>
-                <Row>
-                  <Col>Parents</Col>
-                  <Col>Giok Tin Andi</Col>
-                </Row><hr/>
-                <Row>
-                    <Col>Siblings</Col>
-                    <Col>Chrisvinlya</Col>
-                  </Row>
-                  <Row>
-                  <Col></Col>
-                  <Col>Meilivia</Col>
-                </Row><hr/>
-                <Row>
-                  <Col>Almater</Col>
-                  <Col>University of Tarumanagara</Col>
-                </Row><hr/>
-                <Row>
-                  <Col>Chinese Simplefield</Col>
-                  <Col>洪若源</Col>
-                </Row>
-                <Row>
-                  <Col>Chinese Traditional</Col>
-                  <Col>洪若源</Col>
-                </Row>
-                <Row>
-                  <Col>Name Engilsh Japanese</Col>
-                  <Col>洪 スティーブン</Col>
-                </Row>
-                <Row>
-                  <Col>Hiragana</Col>
-                  <Col>ひろし わかげん (Wakagen Hiroshi)</Col>
-                </Row>
-                <Row>
-                  <Col>Kanji</Col>
-                  <Col>洪 若源 (Wakagen Hiroshi)</Col>
-                </Row>
-                <Row>
-                  <Col>Hangul</Col>
-                  <Col>홍약원</Col>
-                </Row>
-                <Row>
-                  <Col>Tieng Viet</Col>
-                  <Col>hồng nhã nguồn</Col>
-                </Row>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-        </Tab>
-        <Tab className='nav-item' eventKey="home3" title="Tabs3">
-        <Card.Img variant="top" style={{}} src={image2} />
-        </Tab>
-        <Tab className='nav-item' eventKey="homeDisable" title="Disable" disabled>
-            text 4
-        </Tab>
-        </Tabs>
+        <ul className="nav nav-tabs" id="myTab" role="tablist">
+        <li className="nav-item" role="presentation">
+          <button className="nav-link" id="tab-1" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="Tab 1" aria-selected="true">Tab 1</button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button className="nav-link active" id="tab-2" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="Tab 2" aria-selected="false">Tab 2</button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button className="nav-link" id="tab-3" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="Tab 3" aria-selected="false">Tab 3</button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button className="nav-link disabled" id="tab-disabled" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="Disabled" aria-selected="false">Disable</button>
+        </li>
+        </ul>
+        <div className="tab-content" id="myTabContent">
+          <div className="tab-pane fade" id="one" role="tabpanel" aria-labelledby="tab-1">
+          <h4 style={{"textAlign" : "center"}}>Profile</h4>
+                <div className="card container mt-5" style={{ width: '40rem'}} >
+                  <Card.Img variant="top" style={{}} src={image} />
+                  <div className='card-body'>
+                    <div className='card-title' style={{ textAlign: 'center'}}>Steven Hong</div>
+                    <div className='card-text'>
+                    <div className='row'>
+                      <div className='col'>Born</div>
+                      <div className='col'>Penjaringan, Jakarta, Indonesia, 16 September 2000 (21)years</div>
+                    </div>
+                    <div className='row'>
+                      <div className='col'>Residence</div>
+                      <div className='col'>Penjaringan, Jakarta, Indonesia</div>
+                    </div>
+                    <div className='row'>
+                      <div className='col'>Parents</div>
+                      <div className='col'>Giok Tin Andi</div>
+                    </div><hr/>
+                    <div className='row'>
+                        <div className='col'>Siblings</div>
+                        <div className='col'>Chrisvinlya</div>
+                      </div>
+                      <div className='row'>
+                      <div className='col'></div>
+                      <div className='col'>Meilivia</div>
+                    </div><hr/>
+                    <div className='row'>
+                      <div className='col'>Almater</div>
+                      <div className='col'>University of Tarumanagara</div>
+                    </div><hr/>
+                    <div className='row'>
+                      <div className='col'>Chinese Simplefield</div>
+                      <div className='col'>洪若源</div>
+                    </div>
+                    <div className='row'>
+                      <div className='col'>Chinese Traditional</div>
+                      <div className='col'>洪若源</div>
+                    </div>
+                    <div className='row'>
+                      <div className='col'>Name Engilsh Japanese</div>
+                      <div className='col'>洪 スティーブン</div>
+                    </div>
+                    <div className='row'>
+                      <div className='col'>Hiragana</div>
+                      <div className='col'>ひろし わかげん (Wakagen Hiroshi)</div>
+                    </div>
+                    <div className='row'>
+                      <div className='col'>Kanji</div>
+                      <div className='col'>洪 若源 (Wakagen Hiroshi)</div>
+                    </div>
+                    <div className='row'>
+                      <div className='col'>Hangul</div>
+                      <div className='col'>홍약원</div>
+                    </div>
+                    <div className='row'>
+                      <div className='col'>Tieng Viet</div>
+                      <div className='col'>hồng nhã nguồn</div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div className="tab-pane fade show active" id="two" role="tabpanel" aria-labelledby="tab-2">
+              Sugar pium tootise roll biscuit caramels. Liquorice brownie pastry cotton candy oat cake fruitcake jelly chiupa chups.
+              Pudding caramels pastry powder cake souffie water caramels. Jelly-o pie cupcake.
+          </div>
+          <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="tab-3">
+              <Card.Img variant="top" style={{}} src={image2} />
+          </div>
+          <div class="tab-pane fade" id="disabled" role="tabpanel" aria-labelledby="tab-disbled">
+              Sugar pium tootise roll biscuit caramels. Liquorice brownie pastry cotton candy oat cake fruitcake jelly chiupa chups.
+              Pudding caramels pastry powder cake souffie water caramels. Jelly-o pie cupcake.
+          </div>
+        </div>
         </Container>
         
       </div>
